@@ -72,14 +72,17 @@
         <div class="modal-content">
           <span class="close">&times;</span>
           <h2 style="color: black;">Связь с компанией</h2>
-          <form>
+          <form id="contact-form">
             <p style="color: black;">Вы хотите задать нам вопросы?</p>
             <p style="color: black;">Заполните форму, мы вам ответим!</p>
-            <input type="text" placeholder="Имя">
-            <input type="text" placeholder="Фамилия">
-            <input type="text" placeholder="Ваш вопрос" id="largeInput">
+            <input type="text" placeholder="Имя" required>
+            <input type="text" placeholder="Фамилия" required>
+            <input type="telephone" placeholder="Номер телефона" required pattern="[\+\-\(\)\ 0-9]{10,13}">
+            <input type="email" placeholder="Электронная почта" required>
+            <input type="text" placeholder="Ваш вопрос" id="largeInput" required>
             <button type="submit">Отправить</button>
           </form>
+          <div id="success-message" style="display: none; color: green;">Отправлено! Ожидайте ответа.</div>
         </div>
       </div>
   </div>
