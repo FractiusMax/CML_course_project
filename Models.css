@@ -1,0 +1,388 @@
+/*Header*/
+.container-fluid {
+    background-color: #002A23;
+    padding: 0;
+  }
+  
+  .navbar-brand {
+    color: #e2e2e2;
+  }
+  
+  /* Изменение цвета фона навигационной панели */
+  .navbar {
+    color: #e2e2e2;
+    padding: 0;
+  }
+  
+  /* Изменение цвета ссылок в навигационной панели */
+  .navbar-nav .nav-link {
+    color: #e2e2e2;
+  }
+  
+  /* Изменение цвета активной ссылки в навигационной панели */
+  .navbar-nav .nav-link.active {
+    color: #FFFF00;
+  }
+   
+  .navbar-toggler {
+    color: #FFFF00;
+  }
+
+  .navbar-toggler-icon {
+    background-color: #FFFF00;
+    border-radius: 25%;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav a {
+    text-decoration: none;
+    position: relative;
+    margin-left: 10px;
+  }
+  
+  nav a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #FFFF00;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease-in-out;
+  }
+  
+  nav a:hover::after {
+    width: 100%;
+  }
+
+  nav h1 {
+    font-family: "Kadwa", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 36px;
+}
+
+  
+  
+  /* Главная страница */
+
+  body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+  }
+
+  .Models {
+    background: linear-gradient(180deg, #002A23 9.5%, #000000 58.5%);
+    max-height: auto;
+    color: #e2e2e2;
+  }
+
+  .Models h2 {
+    margin-bottom: 10px;
+    color:#FFFF00;
+    text-align: center;
+    align-items: center;
+  }
+
+  .Models section img {
+   width: 800px;
+   height:500px;
+  }
+
+  .Models div:nth-child(3) {
+    margin-left: 25%;
+  }
+
+  section div {
+    display: inline-block;
+    margin: 0 0 0 100px;
+  }
+  
+  .Models h4 {
+    color: #e2e2e2;
+  }
+  
+  button {
+    background-color: transparent;
+    border: none;
+  }
+
+  .communication {
+    position: fixed;
+    bottom: 20px;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+  .communication img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  button img {
+  height: 70px;
+  }
+  
+  /* okno*/
+  .modal {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    display: none;
+    z-index: 9999;
+    max-width: 300px;
+  }
+  
+  .modal-content {
+    padding: 20px;
+  }
+  
+  .close {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .close:hover {
+    color: red;
+  }
+  
+  button {
+    padding: 10px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  #largeInput {
+    height: 100px;
+  }
+  
+  
+  /* footer */
+  a {
+    text-decoration: none;
+    color: #e2e2e2;
+  }
+
+  .footer {
+    background-color: #000000;
+    max-height: auto;
+  }
+  
+  .footer img {
+    height: 70px;
+    margin-left: 46%;
+  }
+  
+  .footer svg {
+    display: block;
+    width: 44%;
+  }
+  
+  .spisok {
+    margin-top: 10px;
+    display: flex;
+    margin-left: 50%;
+  }
+  
+  .punkt {
+  
+    margin-right: 20px;
+    text-align: center;
+  }
+  
+  .name {
+    color: #FFFF00;
+    font-weight: bold;
+  } 
+  
+  .value {
+    margin-top: 5px;
+    align-items: center;
+    color: #e2e2e2;
+  }
+  
+  .valueIMG {
+      display: flex;
+  }
+  
+  .valueIMG img {
+    height: 50px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  
+  .footer-text {
+    color: #999999;
+    font-size: 14px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+  
+@media (max-width: 1861px) { 
+  .Models div:nth-child(3) {
+    margin-left: 6%;
+  }
+}
+@media (max-width: 1200px) {
+  .Models section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .Models section button img {
+    max-width: 80%;
+  }
+
+  .Models div:nth-child(3) {
+    margin-left: 16%;
+  }
+
+  .footer .spisok {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+
+  .footer img {
+    max-width: 80%;
+  }
+
+  .footer .valueIMG .imgbut img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .Models section {
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Models section button {
+    margin-bottom: 20px;
+  }
+
+  .Models section button img {
+    max-width: 60%;
+    height: 100%;
+  }
+
+  .Models div:nth-child(3) {
+    margin-left: 16%;
+  }
+
+  .communication {
+    width: 50px;
+    height: 50px;
+  }
+
+  .footer .spisok {
+    grid-template-columns: 1fr;
+    justify-content: flex-start;
+    margin-left: 20px;
+  }
+  
+  .footer img {
+    max-width: 60%;
+  }
+
+  .footer .valueIMG {
+    justify-content: flex-start;
+  }
+
+  .footer .valueIMG .imgbut img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-brand {
+    font-size: 20px;
+  }
+
+  .navbar-toggler-icon {
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  .Models h2 {
+    font-size: 24px;
+  }
+
+  .Models section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Models div {
+    margin-left: 0;
+  }
+
+  .Models section button {
+    margin-bottom: 20px;
+  }
+
+  .Models section button img {
+    max-width: 50%;
+    height: 100%;
+  }
+
+  .Models div:nth-child(3) {
+    margin-left:0;
+  }
+
+  .communication {
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer .spisok {
+    justify-content: flex-start;
+    margin-left: 20px;
+  }
+
+  .footer .valueIMG {
+    justify-content: flex-start;
+  }
+
+  .footer .valueIMG .imgbut img {
+    height: 100%;
+  }
+
+  .footer img {
+    max-width: 50%;
+  }
+
+  .footer svg {
+    width: 60%;
+  }
+
+  .footer-text {
+    font-size: 14px;
+  }
+}

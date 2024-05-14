@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kadwa&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="Evora.css">
+  <title>Lotus Evora S</title>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <img src="images/logo.jpg">
+      <h1>Lotus Cars</h1>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" aria-current="page" href="HomePage.html">Главная страница</a>
+          <a class="nav-link" href="Models.html">Модели</a>
+          <a class="nav-link" href="Contacts.html">Контакты</a>
+          <a class="nav-link" href="AboutUs.html">О компании</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="img">
+    <img src="images/EvoraMainPhoto.png">
+  </div>
+
+  <div class="EvoraInfo">
+    <section class="txt">
+     <h3>Мощность у вас под рукой</h3>
+        <p>
+            Кабина дает вам полный контроль благодаря чистому эргономичному дизайну и точно взвешенным
+            инструментам, которые делают каждое действие интуитивно понятным. Доверьтесь своим инстинктам
+            и сосредоточьтесь на дороге вперед - Evora держит все необходимое для получения максимального
+            удовольствия от вождения под рукой.
+        </p>
+        <img src="/images/EvoraCabina.png" class="salon">
+      <h3>Красота в движении</h3>
+      <p>Дизайн Evora S сочетает в себе спортивные пропорции и элегантность. Автомобиль имеет низкопрофильную силуэтную линию, аэродинамически эффективную форму и характерные черты, характерные для моделей Lotus.</p>
+       <img src="/images/EvoraKras.png">
+    </section>
+
+    <div class="CarChoose">
+        <h2>Посмотрите также другие наши продукты</h2>
+        <section class="CarChoose">
+          <div>  
+            <h4>Lotus Exige 240R</h4>
+            <button><a href="Exige.html"><img src="/images/Exige.png"></a></button>
+          </div>
+            <div>  
+                <h4>Lotus Elise</h4>
+                <button><a href="Elise.html"><img src="/images/EliseModel.png"></a></button>
+            </div>
+        </section>
+  </div>
+  
+    <button class="communication" id="openModal"><img src="images/communication.png"></button>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2 style="color: black;">Связь с компанией</h2>
+          <form>
+            <p style="color: black;">Вы хотите задать нам вопросы?</p>
+            <p style="color: black;">Заполните форму, мы вам ответим!</p>
+            <input type="text" placeholder="Имя">
+            <input type="text" placeholder="Фамилия">
+            <input type="text" placeholder="Ваш вопрос" id="largeInput">
+            <button type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+  </div>
+  <script src="script.js"></script>
+  <div class="footer">
+    <img src="images/footerlogo.png">
+    <svg style="margin-left: 26% ;" width="770" height="1" viewBox="0 0 770 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <line x1="-0.00305176" y1="0.5" x2="769.997" y2="0.5" stroke="#FFFF00"/>
+      </svg>
+      <div class="spisok">
+        <div class="punkt">
+          <div class="name">Модели</div>
+          <div class="value">
+            <button><div style="color: #e2e2e2;"><a href="Exige.html">Exige</a></div></button>
+            <button><div style="color: #e2e2e2;"><a href="Elise.html">Elise</a></div></button>
+            <button><div style="color: #e2e2e2;"><a href="Evora.html">Evora</a></div></button>
+          </div>
+        </div>
+        <div class="punkt">
+          <div class="name">Контакты</div>
+          <div class="value">
+            <button><div style="color: #e2e2e2;"><a href="Contacts.html">Контакты</a></div></button>
+          </div>
+        </div>
+        <div class="punkt">
+          <div class="name">Социальные сети</div>
+          <div class="valueIMG">
+            <button class="imgbut"><a href="https://www.instagram.com/lotuscars/"><img src="images/inst.png"></a></button>
+            <button class="imgbut"><a href="https://www.facebook.com/LotusCars/"><img src="images/face.png"></a></button>
+            <button class="imgbut"><a href="https://www.youtube.com/@grouplotus"><img src="images/yt.png"></a></button>
+          </div>
+        </div>
+      </div>
+        <p class="footer-text">Created by Maxim Mesich 2 ISiT©</p>
+  </div>
+</body>
+</html>
