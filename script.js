@@ -10,12 +10,12 @@ document.getElementsByClassName("close")[0].addEventListener("click", function()
 document.getElementById("contact-form").addEventListener("submit", function(event) {
   event.preventDefault();
 
-  // Perform form validation
+  // Проверка валидации
   if (this.checkValidity()) {
-    // Display success message
+    // вывод сообщения о успешной отправке
     document.getElementById("success-message").style.display = "block";
 
-    // Close the modal after a short delay
+    // Закрытие окна через время
     setTimeout(function() {
       document.getElementById("modal").style.display = "none";
     }, 2000);
